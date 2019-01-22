@@ -1,0 +1,17 @@
+---           
+title:  Python-输入输出
+date:   2018-08-13 12:00:00
+---
+# Python-输入输出
+***
+> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
+
+介绍一下Python中基本的I/O 函数。也就是输入和输出函数 。我们之前也都使用过，最简单的就是`print`，将传递的表达式或字符串打印到屏幕 。读取键盘输入的我们来介绍一下`raw_input` 。`raw_input()`是Python的一个内置函数，它会读取用户的输入信息，并将其作为一个字符串返回 。说白了就是它可以获取我们输入的话 。
+
+
+
+
+> {{ site.prompt }}
+
+<div  align="center">
+<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>

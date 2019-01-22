@@ -1,0 +1,173 @@
+---              
+title:  "博客搭建成功"
+date:   2018-03-21 12:00:00
+---
+# 博客搭建成功
+***
+> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
+## 一、历程  
+
+<p><img border="0" src="/images/180321.jpg" alt="Pulpit rock" ></p>
+
+知不如用，想不如做！经过我的折腾，我的博客终于搭建起来了。而搭博客的兴趣起源，主要是从偶然的一篇文章中，
+得知 GitHub 可以托管个人网站，且得知利用 hexo 或 jekyll 可以快速的搭建一个博客，而我个人也希望有一个属于自己的网站。所以尽兴地去搭了一个。
+使用 hexo 或 jekyll ，不需要熟悉前端，不需要懂编程，便能自行搭建博客网站。本文阐述的是使用 jekyll 的方法。具体请看下文！为了给各位看官有一个阅读的气氛，
+此处插入音乐<a href="https://music.163.com/song?id=26897042&userid=1403262749">水墨江南</a> 望喜欢！
+
+## 二、所用环境 (在电脑高级配置中添加各个环境的 Path 值，即添加安装路径。)      
+
+（一）、 Git 环境（用于部署到远端）: <a href="https://git-scm.com/downloads">Git</a>  
+（二）、 Ruby 环境（ Jekyll 是基于 Ruby 开发的）: <a href="https://rubyinstaller.org/downloads/">Ruby</a>  
+（三）、包管理器 RubyGems （安装 devkit ）: <a href="https://rubyinstaller.org/downloads/">RubyGems</a> (检测镜像，配置镜像)         
+（四）、注册 GitHub 账户: <a href="https://github.com/">GitHub</a> 创建仓库：(用户名.github.io) 不要勾选“使用自述文件初始化此存储库”             
+（五）、 Python 环境: <a href="https://www.python.org/downloads/">Python</a>   
+（六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>        
+## 三、开始搭建     
+
+### 安装 jekyll    
+
+```ruby
+$ gem install jekyll
+```
+
+### 创建博客  
+
+```ruby
+$ jekyll new 用户名.github.io
+```
+
+### 进入博客目录  
+
+```ruby
+$ cd 用户名.github.io  
+```
+
+### 启动本地服务 
+
+```ruby
+$ jekyll s 
+```
+     
+<http://localhost:4000> 查看本地效果     
+
+### 初始化仓库  
+
+```ruby
+$ git init
+```
+
+### 上传 GitHub 远端  
+
+```ruby
+$ git add .
+```
+
+```ruby
+$ git commit -a -m "添加注释说明文字"
+或 $ git commit -m "添加注释说明文字"
+```
+
+### 生成 SSH keys  
+
+```ruby
+$ ssh-keygen -t rsa -C "邮箱地址"
+```
+
+并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)                  
+
+```ruby
+$ ssh -T git@github.com    (检测连接情况)
+```
+
+### 上传  
+
+```ruby
+$ git remote add origin https://github.com/github用户名/github用户名.github.io.git   (无远程远点情况) 
+或者 $ git remote add origin ssh://git@github.com/github用户名/github用户名.github.io.git 
+```
+
+```ruby
+$ git remote set-url origin git@github.com:github用户名/github用户名.github.io.git   (有远程远点情况)
+或者 $ git remote set-url origin ssh://git@github.com/github用户名/github用户名.github.io.git
+```
+
+```ruby
+$ git push origin master
+```
+
+## 四、后续
+
+### 更新，上传博客 
+
+```ruby
+git pull origin master   #把远程最新的代码更新到本地
+```
+
+```
+$ git add . 
+```
+
+```ruby
+$ git commit -a -m "自己的提交注释" 
+或 $ git commit -m "自己的提交注释" 
+```
+
+```ruby
+$ git push origin master 
+```
+
+### 不同终端上传      
+先下载仓库内容      
+
+```ruby
+$ git clone https://github.com/用户名/github用户名.github.io.git
+```
+     
+或者    
+
+```ruby
+$ clone git://github.com/用户名/github用户名.github.io.git
+```
+   
+然后在进行上述步骤      
+
+## 五、想用 hexo 搭建博客的请看：     
+
+### 教程链接
+<p><a href="http://www.lovebxm.com/2017/05/30/buildBlog/#GitHub-注册和配置">白小明</a></p>     
+<p><a href="http://mungo.space/page/4/">zhaoyang</a></p>     
+<p><a href="http://windliang.cc/page/2/">随风丶亮
+</a></p>     
+<p><a href="http://www.itfanr.cc/page/6/">IT范儿</a></p>      
+<p><a href="https://yueyongdev.github.io/2017/10/01/hexo/">Yue Yong</a></p>
+<p><a href="https://frozentearz.github.io">Frazier's World</a></p>
+<p><a href="http://simonyang777.com/2017/04/03/20170403/">？</a></p>
+<p><a href="https://ikookblog.com">ikook Blog
+</a></p>
+<p><a href="https://righere.github.io/2016/10/10/install-hexo/">Righere的博客</a></p>
+
+### 软件    
+<p><a href="https://nodejs.org/dist/v5.12.0/">Node.js</a></p>   
+<p><a href="https://git-scm.com/downloads">git</a></p> 
+
+### 环境    
+注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(用户名.github.io)
+
+## 其它代码托管平台
+compassblog：<a href="http://mp.weixin.qq.com/s?__biz=MzU5MTE0ODcwNQ==&mid=2247484186&idx=1&sn=60827984f095aff1b4284c9aba7a51ab&chksm=fe3220d4c945a9c2961c9f481d37d7782b2f26498c9459d5c619ba03c74513c8af5e9e629b1a&mpshare=1&scene=23&srcid=1021Av4remhiM5nag7qkkZDx#rd">博客部署到 Coding 上</a>
+
+
+#### 本文完，欢迎赞赏      
+
+<div  align="center">      
+<p><img src="/images/weixin.png" width="200" height="200"></p>     
+
+<div  align="center">      
+<p><img src="/images/zhifubao.jpg" width="200" height="200"></p>     
+
+
+> {{ site.prompt }}    
+
+<div  align="center">       
+<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>       
+

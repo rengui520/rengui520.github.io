@@ -1,0 +1,35 @@
+---
+           
+title:  Python-解释器的区分
+date:   2018-07-10 12:00:00
+---
+# Python-解释器的区分
+***
+> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
+
+学习 Python 的人都知道，Python 最响亮的一句推广就是：人生苦短，我用 Python 。
+
+Python 因其的应用范围广、简洁性、自动化脚本等一系列特点。迅速登上了语言榜的前几名。
+
+Python 能应用于网络爬虫(scrapy)、数据分析(numpy pandas matplotlib)、 Web 应用开发(django flask tornado)、服务器后台、自动化运维、机器学习、科学计算、人工智能等。
+
+而相对初学者，下载解释器往往让人很捉狂。故在此，我带大家区分一下解释器。
+
+大家在下载安装各个解释器之后，必须在环境变量中配置 path（即输入安装路径，python 和 pip 路径都要配置）。而各个解释器的 path 越靠前，当在命令行盲打 python 时，出现的第一个就是靠前的那一个！
+
+然后在命令行下输入 where python ，即可查询各个 python 的版本。
+
+而为了区分各个解释器，我们往往用修改名字的方法进行区别。在安装目录下，把 python.exe 程序修改为易于辨认的文件名。pip 同理。（先把 python 或 pip 文件复制一下）
+
+如 python2.x 系列的，则修改为 python2.exe 或 python2-conda.exe，并在 scripts 文件夹中，把 pip 改为 pip2 或 pip2-conda（但实际上，文件夹已经存在 pip2 的，则不用改！）。
+
+如 python3.x 系列的，则修改为 python3.exe 或 python3-conda.exe，并在 scripts 文件夹中，把 pip 改为 pip3 或 pip3-conda（但实际上，文件夹已经存在 pip3 的，则不用改！）。
+
+PS : 在 anaconda 解释器中，必须在 pip 的路径下先复制一个 pip-script.py 文件，然后修改为 pip2-conda-script.py 或 pip3-conda-script.py
+
+PPS: 最后，在进入了 python 的编辑状态之后，可以输入 exit()  进行退出。
+
+> {{ site.prompt }}
+
+<div  align="center">
+<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>

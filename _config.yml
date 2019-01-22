@@ -1,0 +1,29 @@
+# ----------- CONFIGURABLE START -----------
+title:            "旭霁"
+description:      "思考，总结"
+url:              https://xuujii.github.io # Site url, without a slash at the end.
+prompt:           "欢迎关注我的公众号：「xuujii」"
+signoff:          "旭霁" # Your name
+facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
+google_analytics: UA-127798508-1 # Set tracking, remove from /javascripts/basic.js if unwanted.
+share:            false # Turn on twitter and facebook share buttons
+name:             旭霁
+links:
+  - name:         Blog
+    url:          /
+    external:     false
+  - name:         About
+    url:          /about
+    external:     false
+  - name:         Email
+    url:          mailto:xuujii520@gmail.com
+    external:     true
+  - name:         GitHub
+    url:          https://github.com/xuujii
+    external:     true
+# ------------ CONFIGURABLE END ------------
+
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"
