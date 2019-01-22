@@ -1,8 +1,8 @@
 # ----------- CONFIGURABLE START -----------
 title:            "旭霁"
 description:      "思考，总结"
-url:              https://xuujii.github.io # Site url, without a slash at the end.
-prompt:           "欢迎关注我的公众号：「xuujii」"
+url:              https://rengui520.github.io # Site url, without a slash at the end.
+prompt:           "欢迎关注我的公众号：「韧桂」"
 signoff:          "旭霁" # Your name
 facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-127798508-1 # Set tracking, remove from /javascripts/basic.js if unwanted.
@@ -19,7 +19,7 @@ links:
     url:          mailto:xuujii520@gmail.com
     external:     true
   - name:         GitHub
-    url:          https://github.com/xuujii
+    url:          https://github.com/rengui520
     external:     true
 # ------------ CONFIGURABLE END ------------
 
