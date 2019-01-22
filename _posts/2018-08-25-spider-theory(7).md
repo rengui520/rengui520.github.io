@@ -3,6 +3,7 @@ title:  Python 爬虫库(7)-Scrapy
 date:   2018-09-12 12:00:00
 ---
 # Python 爬虫库(7)-Scrapy
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
@@ -61,4 +62,4 @@ ITEM_PIPELINES = {
 > {{ site.prompt }}
 
 <div  align="center">
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>

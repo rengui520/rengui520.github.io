@@ -2,6 +2,9 @@
 title:  photoshop的使用
 date:   2018-08-01 12:00:00
 ---
+***
+> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
+
 前言
 在不破坏原始图片素材的基础上进行修改
 
@@ -115,3 +118,9 @@ ctrl+shift+i：反选
 中级进阶
 高级修炼
 全面掌握
+
+
+> {{ site.prompt }}
+
+<div  align="center">
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>

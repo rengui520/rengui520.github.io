@@ -3,6 +3,7 @@ title:  Python-Flask-构建微信小程序订餐系统
 date:   2018-11-27 12:00:00
 ---
 # Python-Flask-构建微信小程序订餐系统
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
@@ -24,4 +25,4 @@ date:   2018-11-27 12:00:00
 > {{ site.prompt }}
 
 <div  align="center">
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>

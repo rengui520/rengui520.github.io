@@ -3,8 +3,10 @@ title:  "博客搭建成功"
 date:   2018-03-21 12:00:00
 ---
 # 博客搭建成功
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
+
 ## 一、历程  
 
 <p><img border="0" src="/images/180321.jpg" alt="Pulpit rock" ></p>
@@ -169,5 +171,5 @@ compassblog：<a href="http://mp.weixin.qq.com/s?__biz=MzU5MTE0ODcwNQ==&mid=2247
 > {{ site.prompt }}    
 
 <div  align="center">       
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>       
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>       
 

@@ -3,6 +3,7 @@ title:  Python 爬虫库之六-pyquery
 date:   2018-09-06 12:00:00
 ---
 # Python 爬虫库之六-pyquery
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
@@ -57,4 +58,4 @@ print(doc('li'))
 > {{ site.prompt }}
 
 <div  align="center">
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>

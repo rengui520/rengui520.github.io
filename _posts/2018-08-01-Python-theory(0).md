@@ -4,6 +4,7 @@ title:  Python-解释器的区分
 date:   2018-07-10 12:00:00
 ---
 # Python-解释器的区分
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
@@ -32,4 +33,4 @@ PPS: 最后，在进入了 python 的编辑状态之后，可以输入 exit()  �
 > {{ site.prompt }}
 
 <div  align="center">
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>

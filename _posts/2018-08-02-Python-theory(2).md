@@ -3,6 +3,7 @@ title:  Python-学习之旅-2-函数
 date:   2018-08-02 12:00:00
 ---
 # Python-学习之旅-2-函数
+
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
@@ -78,4 +79,4 @@ my_print("函数1")
 > {{ site.prompt }}
 
 <div  align="center">
-<img src="https://xuujii.github.io/images/wechart.jpg" width = "200" height = "200"/>
+<img src="https://rengui520.github.io/images/wechart.jpg" width = "200" height = "200"/>
