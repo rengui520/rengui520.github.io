@@ -6,21 +6,21 @@ prompt:           "欢迎关注我的公众号：「韧桂」"
 signoff:          "旭霁" # Your name
 facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-127798508-1 # Set tracking, remove from /javascripts/basic.js if unwanted.
-share:            false # Turn on twitter and facebook share buttons
+share:            False # Turn on twitter and facebook share buttons
 name:             旭霁
 links:
   - name:         Blog
     url:          /
-    external:     false
+    external:     False
   - name:         About
     url:          /about
-    external:     false
+    external:     False
   - name:         Email
     url:          mailto:xuujii520@gmail.com
-    external:     true
+    external:     True
   - name:         GitHub
     url:          https://github.com/rengui520
-    external:     true
+    external:     True
 # ------------ CONFIGURABLE END ------------
 
 permalink:        /posts/:title
