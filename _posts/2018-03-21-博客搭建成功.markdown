@@ -23,7 +23,8 @@ date:   2018-03-21 12:00:00
 （三）、包管理器 RubyGems （安装 devkit ）: <a href="https://rubyinstaller.org/downloads/">RubyGems</a> (检测镜像，配置镜像)         
 （四）、注册 GitHub 账户: <a href="https://github.com/">GitHub</a> 创建仓库：(用户名.github.io) 不要勾选“使用自述文件初始化此存储库”             
 （五）、 Python 环境: <a href="https://www.python.org/downloads/">Python</a>   
-（六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>        
+（六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>  
+
 ## 三、开始搭建     
 
 ### 安装 jekyll    
@@ -57,18 +58,6 @@ $ jekyll s
 ```ruby
 $ git init
 ```
-
-### 上传 GitHub 远端  
-
-```ruby
-$ git add .
-```
-
-```ruby
-$ git commit -a -m "添加注释说明文字"
-或 $ git commit -m "添加注释说明文字"
-```
-
 ### 生成 SSH keys  
 
 ```ruby
@@ -81,16 +70,28 @@ $ ssh-keygen -t rsa -C "邮箱地址"
 $ ssh -T git@github.com    (检测连接情况)
 ```
 
-### 上传  
+### 建立传输通道  
 
+注意：仓库名的前半部分必须与 GitHub 用户名相同。否则，部署不了博客页面。
 ```ruby
-$ git remote add origin https://github.com/github用户名/github用户名.github.io.git   (无远程远点情况) 
-或者 $ git remote add origin ssh://git@github.com/github用户名/github用户名.github.io.git 
+$ git remote add origin https://github.com/username/username.github.io.git   (无远程远点情况) 
+或者 $ git remote add origin ssh://git@github.com/username/username.github.io.git 
 ```
 
 ```ruby
-$ git remote set-url origin git@github.com:github用户名/github用户名.github.io.git   (有远程远点情况)
-或者 $ git remote set-url origin ssh://git@github.com/github用户名/github用户名.github.io.git
+$ git remote set-url origin git@github.com:username/username.github.io.git   (有远程远点情况)
+或者 $ git remote set-url origin ssh://git@github.com/username/username.github.io.git
+```
+
+### 上传 GitHub 远端  
+
+```ruby
+$ git add .
+```
+
+```ruby
+$ git commit -a -m "添加注释说明文字"
+或 $ git commit -m "添加注释说明文字"
 ```
 
 ```ruby
@@ -98,25 +99,6 @@ $ git push origin master
 ```
 
 ## 四、后续
-
-### 更新，上传博客 
-
-```ruby
-git pull origin master   #把远程最新的代码更新到本地
-```
-
-```
-$ git add . 
-```
-
-```ruby
-$ git commit -a -m "自己的提交注释" 
-或 $ git commit -m "自己的提交注释" 
-```
-
-```ruby
-$ git push origin master 
-```
 
 ### 不同终端上传      
 先下载仓库内容      
@@ -131,7 +113,7 @@ $ git clone https://github.com/用户名/github用户名.github.io.git
 $ clone git://github.com/用户名/github用户名.github.io.git
 ```
    
-然后在进行上述步骤      
+添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
 
 ## 五、想用 hexo 搭建博客的请看：     
 
