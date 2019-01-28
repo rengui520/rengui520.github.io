@@ -8,7 +8,6 @@ date:   2018-03-21 12:00:00
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
 ## 一、历程  
-
 <p><img border="0" src="/images/180321.jpg" alt="Pulpit rock" ></p>
 
 知不如用，想不如做！经过我的折腾，我的博客终于搭建起来了。而搭博客的兴趣起源，主要是从偶然的一篇文章中，
@@ -26,27 +25,22 @@ date:   2018-03-21 12:00:00
 （六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>  
 
 ## 三、开始搭建     
-
 ### 安装 jekyll    
-
 ```ruby
 $ gem install jekyll
 ```
 
 ### 创建博客  
-
 ```ruby
 $ jekyll new 用户名.github.io
 ```
 
 ### 进入博客目录  
-
 ```ruby
 $ cd 用户名.github.io  
 ```
 
 ### 启动本地服务 
-
 ```ruby
 $ jekyll s 
 ```
@@ -54,24 +48,20 @@ $ jekyll s
 <http://localhost:4000> 查看本地效果     
 
 ### 初始化仓库  
-
 ```ruby
 $ git init
 ```
-### 生成 SSH keys  
-
+### 生成 SSH keys 
+执行以下命令，生成 SSH keys，并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)  
 ```ruby
 $ ssh-keygen -t rsa -C "邮箱地址"
 ```
 
-并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)                  
-
 ```ruby
-$ ssh -T git@github.com    (检测连接情况)
+$ ssh -T git@github.com    #(检测连接情况)
 ```
 
 ### 建立传输通道  
-
 注意：仓库名的前半部分必须与 GitHub 用户名相同。否则，部署不了博客页面。
 ```ruby
 $ git remote add origin https://github.com/username/username.github.io.git   (无远程远点情况) 
@@ -84,7 +74,6 @@ $ git remote set-url origin git@github.com:username/username.github.io.git   (�
 ```
 
 ### 上传 GitHub 远端  
-
 ```ruby
 $ git add .
 ```
@@ -99,16 +88,13 @@ $ git push origin master
 ```
 
 ## 四、后续
-
 ### 不同终端上传      
 先下载仓库内容      
-
 ```ruby
 $ git clone https://github.com/用户名/github用户名.github.io.git
 ```
      
 或者    
-
 ```ruby
 $ clone git://github.com/用户名/github用户名.github.io.git
 ```
@@ -116,7 +102,6 @@ $ clone git://github.com/用户名/github用户名.github.io.git
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
 
 ## 五、想用 hexo 搭建博客的请看：     
-
 ### 教程链接
 <p><a href="http://www.lovebxm.com/2017/05/30/buildBlog/#GitHub-注册和配置">白小明</a></p>     
 <p><a href="http://mungo.space/page/4/">zhaoyang</a></p>     
@@ -142,7 +127,6 @@ compassblog：<a href="http://mp.weixin.qq.com/s?__biz=MzU5MTE0ODcwNQ==&mid=2247
 
 
 #### 本文完，欢迎赞赏      
-
 <div  align="center">      
 <p><img src="/images/weixin.png" width="200" height="200"></p>     
 
