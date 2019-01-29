@@ -27,3 +27,6 @@ permalink:        /posts/:title
 defaults:
   - values:
       layout: "default"
+
+markdown: kramdown
+highlighter: pygments

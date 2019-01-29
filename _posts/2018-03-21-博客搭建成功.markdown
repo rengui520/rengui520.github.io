@@ -32,12 +32,12 @@ $ gem install jekyll
 
 ### 创建博客  
 ```ruby
-$ jekyll new 用户名.github.io
+$ jekyll new username.github.io
 ```
 
 ### 进入博客目录  
 ```ruby
-$ cd 用户名.github.io  
+$ cd username.github.io  
 ```
 
 ### 启动本地服务 
@@ -91,12 +91,12 @@ $ git push origin master
 ### 不同终端上传      
 先下载仓库内容      
 ```ruby
-$ git clone https://github.com/用户名/github用户名.github.io.git
+$ git clone https://github.com/username/username.github.io.git
 ```
      
 或者    
 ```ruby
-$ clone git://github.com/用户名/github用户名.github.io.git
+$ clone git://github.com/username/username.github.io.git
 ```
    
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
