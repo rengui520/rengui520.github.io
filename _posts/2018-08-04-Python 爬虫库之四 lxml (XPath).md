@@ -15,7 +15,7 @@ date:   2018-08-04 12:00:00
 
   - xpath 的简单用法:
 
-    ```
+    ```python
     from lxml import etree
     
     element = etree.HTML("html字符串")
