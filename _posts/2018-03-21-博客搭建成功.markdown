@@ -74,6 +74,12 @@ $ git remote set-url origin git@github.com:username/username.github.io.git   (�
 ```
 
 ### 上传 GitHub 远端  
+设置提交人的用户名和邮箱
+```ruby
+git config --global user.name "username"
+git config --global user.email "useremail"   #这里是全局配置，把 --global 去掉，则不是全局。
+```
+
 ```ruby
 $ git add .
 ```
@@ -96,7 +102,7 @@ $ git clone https://github.com/username/username.github.io.git
      
 或者    
 ```ruby
-$ clone git://github.com/username/username.github.io.git
+$ git clone git@github.com:username/username.github.io.git
 ```
    
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
