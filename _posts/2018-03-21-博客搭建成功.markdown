@@ -25,10 +25,22 @@ date:   2018-03-21 12:00:00
 （六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>  
 
 ## 三、开始搭建     
-### 安装 jekyll    
-```ruby
-$ gem install jekyll
-```
+### 安装 jekyll  
+<head>
+    <title>Rouge</title>
+    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
+    <style>
+        pre{
+            background: rgba(0, 0, 0, 0.95);
+        }
+    </style>
+</head>
+
+<body>
+    {% highlight ruby %}
+    $ gem install jekyll
+    {% endhighlight %}
+</body>
 
 ### 创建博客  
 ```ruby

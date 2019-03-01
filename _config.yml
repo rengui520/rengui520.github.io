@@ -29,5 +29,5 @@ defaults:
       layout: "default"
       
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
