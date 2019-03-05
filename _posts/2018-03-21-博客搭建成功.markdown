@@ -36,24 +36,24 @@ $ jekyll new username.github.io
 {% endhighlight %}
 
 ### 进入博客目录  
-```ruby
+``` ruby
 $ cd username.github.io  
 ```
 
 ### 启动本地服务 
-```ruby
+``` ruby
 $ jekyll s 
 ```
      
 <http://localhost:4000> 查看本地效果     
 
 ### 初始化仓库  
-```ruby
+``` ruby
 $ git init
 ```
 ### 生成 SSH keys 
 执行以下命令，生成 SSH keys，并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)  
-```ruby
+``` ruby
 $ ssh-keygen -t rsa -C "useremail"
 ```
 
