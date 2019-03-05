@@ -2,6 +2,7 @@
 title:  博客搭建成功
 date:   2018-03-21 12:00:00
 tag:    Jekyll
+header-img: "img/180321.jpg"
 ---
 # 博客搭建成功
 
