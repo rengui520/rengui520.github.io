@@ -1,6 +1,7 @@
 ---              
 title:  Python-Flask-构建微信小程序订餐系统
 date:   2018-11-27 12:00:00
+tag:    小程序
 ---
 # Python-Flask-构建微信小程序订餐系统
 
