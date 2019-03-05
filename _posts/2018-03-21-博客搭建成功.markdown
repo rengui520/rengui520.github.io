@@ -1,4 +1,5 @@
----              
+---   
+layout: post           
 title:  博客搭建成功
 date:   2018-03-21 12:00:00
 categories: [Blog, Jekyll]
@@ -53,7 +54,7 @@ $ git init
 ### 生成 SSH keys 
 执行以下命令，生成 SSH keys，并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)  
 ```ruby
-$ ssh-keygen -t rsa -C "邮箱地址"
+$ ssh-keygen -t rsa -C "useremail"
 ```
 
 ```ruby
@@ -84,8 +85,8 @@ $ git add .
 ```
 
 ```ruby
-$ git commit -a -m "添加注释说明文字"
-或 $ git commit -m "添加注释说明文字"
+$ git commit -a -m "Add submission Tags"
+或 $ git commit -m "Add submission Tags"
 ```
 
 ```ruby
