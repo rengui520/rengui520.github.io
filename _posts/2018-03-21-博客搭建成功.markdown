@@ -1,6 +1,7 @@
 ---              
 title:  博客搭建成功
 date:   2018-03-21 12:00:00
+categories: [Blog, Jekyll]
 ---
 # 博客搭建成功
 
@@ -26,21 +27,7 @@ date:   2018-03-21 12:00:00
 
 ## 三、开始搭建     
 ### 安装 jekyll  
-<head>
-    <title>Rouge</title>
-    <link media="all" rel="stylesheet" type="text/css" href="../assets/rouge/rouge.css" />
-    <style>
-        pre{
-            background: rgba(0, 0, 0, 0.95);
-        }
-    </style>
-</head>
-
-<body>
-{% highlight ruby %}
-$ gem install jekyll
-{% endhighlight %}
-</body>
+<div class="output_wrapper" id="output_wrapper_id" style="font-size: 16px; color: rgb(62, 62, 62); line-height: 1.6; word-spacing: 0px; letter-spacing: 0px; font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><pre style="font-size: inherit; color: inherit; line-height: inherit; margin: 0px; padding: 0px;"><code class="hljs php" style="overflow-wrap: break-word; margin: 0px 2px; line-height: 18px; font-size: 14px; font-weight: normal; word-spacing: 0px; letter-spacing: 0px; font-family: Consolas, Inconsolata, Courier, monospace; border-radius: 0px; overflow-x: auto; color: rgb(234, 234, 234); background: rgb(0, 0, 0); padding: 0.5em; display: block !important; white-space: pre !important; word-wrap: normal !important; word-break: normal !important; overflow: auto !important;">$&nbsp;gem&nbsp;install&nbsp;jekyll<br></code></pre></div>
 
 ### 创建博客  
 ```ruby
@@ -120,15 +107,10 @@ $ git clone git@github.com:username/username.github.io.git
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
 
 ## 五、想用 hexo 搭建博客的请看：     
-### 教程链接
-<p><a href="http://www.lovebxm.com/2017/05/30/buildBlog/#GitHub-注册和配置">白小明</a></p>     
-<p><a href="http://mungo.space/page/4/">zhaoyang</a></p>     
+### 教程链接   
+   
 <p><a href="http://windliang.cc/page/2/">随风丶亮
 </a></p>     
-<p><a href="http://www.itfanr.cc/page/6/">IT范儿</a></p>      
-<p><a href="https://yueyongdev.github.io/2017/10/01/hexo/">Yue Yong</a></p>
-<p><a href="https://frozentearz.github.io">Frazier's World</a></p>
-<p><a href="http://simonyang777.com/2017/04/03/20170403/">？</a></p>
 <p><a href="https://ikookblog.com">ikook Blog
 </a></p>
 <p><a href="https://righere.github.io/2016/10/10/install-hexo/">Righere的博客</a></p>
@@ -141,7 +123,7 @@ $ git clone git@github.com:username/username.github.io.git
 注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(用户名.github.io)
 
 ## 其它代码托管平台
-compassblog：<a href="http://mp.weixin.qq.com/s?__biz=MzU5MTE0ODcwNQ==&mid=2247484186&idx=1&sn=60827984f095aff1b4284c9aba7a51ab&chksm=fe3220d4c945a9c2961c9f481d37d7782b2f26498c9459d5c619ba03c74513c8af5e9e629b1a&mpshare=1&scene=23&srcid=1021Av4remhiM5nag7qkkZDx#rd">博客部署到 Coding 上</a>
+
 
 
 #### 本文完，欢迎赞赏      
