@@ -1,6 +1,7 @@
 ---             
 title:  Python 爬虫库(7)-Scrapy
 date:   2018-08-07 12:00:00
+tag:    spider
 ---
 # Python 爬虫库(7)-Scrapy
 

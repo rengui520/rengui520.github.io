@@ -1,6 +1,7 @@
 ---             
 title:  Python 爬虫库之六-pyquery
 date:   2018-08-06 12:00:00
+tag:    spider
 ---
 # Python 爬虫库之六-pyquery
 

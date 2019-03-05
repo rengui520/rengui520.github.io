@@ -1,6 +1,7 @@
 ---          
 title:  Python 爬虫库之二 requests
 date:   2018-08-02 12:00:00
+tag:    spider
 ---
 # Python 爬虫库之二 requests
 
