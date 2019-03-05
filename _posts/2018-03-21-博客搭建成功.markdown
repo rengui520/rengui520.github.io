@@ -1,7 +1,7 @@
 ---             
 title:  博客搭建成功
 date:   2018-03-21 12:00:00
-tag:    Blog-Jekyll
+tag:    Jekyll
 ---
 # 博客搭建成功
 
