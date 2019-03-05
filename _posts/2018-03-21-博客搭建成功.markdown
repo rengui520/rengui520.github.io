@@ -113,14 +113,14 @@ $ git clone git@github.com:username/username.github.io.git
 </a></p>     
 <p><a href="https://ikookblog.com">ikook Blog
 </a></p>
-<p><a href="https://righere.github.io/2016/10/10/install-hexo/">Righere的博客</a></p>
+<p><a href="https://righere.github.io/2016/10/10/install-hexo/">Righere Blog</a></p>
 
 ### 软件    
 <p><a href="https://nodejs.org/dist/v5.12.0/">Node.js</a></p>   
 <p><a href="https://git-scm.com/downloads">git</a></p> 
 
 ### 环境    
-注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(用户名.github.io)
+注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(username.github.io)
 
 ## 其它代码托管平台
 
