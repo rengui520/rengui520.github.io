@@ -36,7 +36,8 @@ $ jekyll new username.github.io
 {% endhighlight %}
 
 ### 进入博客目录  
-``` ruby
+<head><link rel="stylesheet" href="../css/rouge.css"></head>
+```
 $ cd username.github.io  
 ```
 
