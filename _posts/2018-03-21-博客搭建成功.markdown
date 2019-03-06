@@ -28,17 +28,19 @@ header-img: "img/180321.jpg"
 
 ## 三、开始搭建     
 ### 安装 jekyll  
-<div class="output_wrapper" id="output_wrapper_id" style="font-size: 16px; color: rgb(62, 62, 62); line-height: 1.6; word-spacing: 0px; letter-spacing: 0px; font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><pre style="font-size: inherit; color: inherit; line-height: inherit; margin: 0px; padding: 0px;"><code class="hljs php" style="overflow-wrap: break-word; margin: 0px 2px; line-height: 18px; font-size: 14px; font-weight: normal; word-spacing: 0px; letter-spacing: 0px; font-family: Consolas, Inconsolata, Courier, monospace; border-radius: 0px; overflow-x: auto; color: rgb(234, 234, 234); background: rgb(0, 0, 0); padding: 0.5em; display: block !important; white-space: pre !important; word-wrap: normal !important; word-break: normal !important; overflow: auto !important;">$&nbsp;gem&nbsp;install&nbsp;jekyll<br></code></pre></div>
+<head><link rel="stylesheet" href="../css/rouge.css"></head>
+```
+$ gem install jekyll
+```
 
 ### 创建博客  
-{% highlight python %}
 
+```
 $ jekyll new username.github.io
-
-{% endhighlight %}
+```
 
 ### 进入博客目录  
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
+
 ```
 $ cd username.github.io  
 ```
