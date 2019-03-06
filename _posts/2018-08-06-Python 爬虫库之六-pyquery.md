@@ -8,6 +8,7 @@ tag:    Spider
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
+<head><link rel="stylesheet" href="../css/rouge.css"></head>
 强大又灵活的网页解析库。使用 pyquery 之前，必须初始化。它的初始化方式有多种，比如直接传入字符串、传入URL、传入文件名等。
 
 1.

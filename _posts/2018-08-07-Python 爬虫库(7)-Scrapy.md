@@ -8,6 +8,7 @@ tag:    Spider
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
+<head><link rel="stylesheet" href="../css/rouge.css"></head>
 在我们编写爬虫之前，先了解一下`scrapy`的爬取机制，`scrapy`和绝大多数的爬虫喜欢用繁琐的正则表达式不同，他更喜欢使用的`xpath`和`CSS`的类来搜索他要的信息，笔者试过很多正则表达式的框架，首先正则表达式本来就是个很繁琐的东西，而且经常会出错，重写正则表达式就会耗去大量的开发时间，而`XPath`的本就是为了解析`HTML`和`XML`而做的，非常方便，
 
 不懂`xpath`的同学可以点这里：[xpath教程](http://www.w3school.com.cn/xpath/)
