@@ -9,8 +9,8 @@
             .demo{
                 border: 1px solid #ffffff;
                 
-                text-align: center;
-                float: left;
+                text-align: left;
+                float: center;
             }
             .icon{
                 
@@ -47,12 +47,16 @@
 		</ul>
 		<!DOCTYPE html>-->
 		
-        <div class="demo">
+        <!--<div class="demo">
             <div class="icon">
             </div>
-            <div class="font">
+            <div class="font">-->
                 <ul class="list pa0">
 					{% for post in site.posts %}
+					    <div class="demo">
+							<div class="icon">
+							</div>
+						<div class="font">
 					<li class="mv2">
 						<a href="{{ site.url }}{{ post.url }}" class="db pv1 link blue hover-mid-gray">
 							<time class="fr silver ttu">{{ post.date | date: "%Y-%m-%d" }} </time>
