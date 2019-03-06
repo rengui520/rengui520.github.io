@@ -9,7 +9,7 @@ header-img: "img/180321.jpg"
 ***
 > 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
-## 一、历程  
+### 一、历程  
 <p><img border="0" src="/images/180321.jpg" alt="Pulpit rock" ></p>
 
 知不如用，想不如做！经过我的折腾，我的博客终于搭建起来了。而搭博客的兴趣起源，主要是从偶然的一篇文章中，
@@ -17,7 +17,7 @@ header-img: "img/180321.jpg"
 使用 hexo 或 jekyll ，不需要熟悉前端，不需要懂编程，便能自行搭建博客网站。本文阐述的是使用 jekyll 的方法。具体请看下文！为了给各位看官有一个阅读的气氛，
 此处插入音乐<a href="https://music.163.com/song?id=26897042&userid=1403262749">水墨江南</a> 望喜欢！
 
-## 二、所用环境 (在电脑高级配置中添加各个环境的 Path 值，即添加安装路径。)      
+### 二、所用环境 (在电脑高级配置中添加各个环境的 Path 值，即添加安装路径。)      
 
 （一）、 Git 环境（用于部署到远端）: <a href="https://git-scm.com/downloads">Git</a>  
 （二）、 Ruby 环境（ Jekyll 是基于 Ruby 开发的）: <a href="https://rubyinstaller.org/downloads/">Ruby</a>  
@@ -26,37 +26,37 @@ header-img: "img/180321.jpg"
 （五）、 Python 环境: <a href="https://www.python.org/downloads/">Python</a>   
 （六）、友链: <a href="http://wuxiaolong.me/2014/10/26/build-blog/">吴小龙同学</a>  
 
-## 三、开始搭建     
-### 安装 jekyll  
+### 三、开始搭建     
+#### 安装 jekyll  
 <head><link rel="stylesheet" href="../css/rouge.css"></head>
 ```
 $ gem install jekyll
 ```
 
-### 创建博客  
+#### 创建博客  
 
 ```
 $ jekyll new username.github.io
 ```
 
-### 进入博客目录  
+#### 进入博客目录  
 
 ```
 $ cd username.github.io  
 ```
 
-### 启动本地服务 
+#### 启动本地服务 
 ``` ruby
 $ jekyll s 
 ```
      
 <http://localhost:4000> 查看本地效果     
 
-### 初始化仓库  
+#### 初始化仓库  
 ``` ruby
 $ git init
 ```
-### 生成 SSH keys 
+#### 生成 SSH keys 
 执行以下命令，生成 SSH keys，并到 GitHub 输入 SSH keys  ，(文件在  C 盘\用户文件夹\ .ssh 文件夹\ PUB 文件 中)  
 ``` ruby
 $ ssh-keygen -t rsa -C "useremail"
@@ -66,7 +66,7 @@ $ ssh-keygen -t rsa -C "useremail"
 $ ssh -T git@github.com    #(检测连接情况)
 ```
 
-### 建立传输通道  
+#### 建立传输通道  
 注意：仓库名的前半部分必须与 GitHub 用户名相同。否则，部署不了博客页面。
 ```ruby
 $ git remote add origin https://github.com/username/username.github.io.git   (无远程远点情况) 
@@ -78,7 +78,7 @@ $ git remote set-url origin git@github.com:username/username.github.io.git   (�
 或者 $ git remote set-url origin ssh://git@github.com/username/username.github.io.git
 ```
 
-### 上传 GitHub 远端  
+#### 上传 GitHub 远端  
 设置提交人的用户名和邮箱
 ```ruby
 $ git config --global user.name "username"
@@ -98,8 +98,8 @@ $ git commit -a -m "Add submission Tags"
 $ git push origin master
 ```
 
-## 四、后续
-### 不同终端上传      
+### 四、后续
+#### 不同终端上传      
 先下载仓库内容      
 ```
 $ git clone https://github.com/username/username.github.io.git
@@ -112,8 +112,8 @@ $ git clone git@github.com:username/username.github.io.git
    
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
 
-## 五、想用 hexo 搭建博客的请看：     
-### 教程链接   
+### 五、想用 hexo 搭建博客的请看：     
+#### 教程链接   
    
 <p><a href="http://windliang.cc/page/2/">随风丶亮
 </a></p>     
@@ -121,14 +121,14 @@ $ git clone git@github.com:username/username.github.io.git
 </a></p>
 <p><a href="https://righere.github.io/2016/10/10/install-hexo/">Righere Blog</a></p>
 
-### 软件    
+#### 软件    
 <p><a href="https://nodejs.org/dist/v5.12.0/">Node.js</a></p>   
 <p><a href="https://git-scm.com/downloads">git</a></p> 
 
-### 环境    
+#### 环境    
 注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(username.github.io)
 
-## 其它代码托管平台
+### 其它代码托管平台
 
 
 
