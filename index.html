@@ -1,5 +1,6 @@
 ---
 ---
+<html>
 
 <ul class="list pa0">
   {% for post in site.posts %}
@@ -11,3 +12,74 @@
   </li>
   {% endfor %}
 </ul>
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            .demo{
+                border: 1px solid #ffffff;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                float: left;
+            }
+            .icon{
+                width: 60px;
+                height: 56px;
+                background: url(img/tb01.png) no-repeat;
+                margin: 10px auto;
+            }
+
+            .demo:hover{
+                border: 1px solid red;
+                cursor: pointer;
+            }
+
+            .demo:hover .icon{
+                background: url(img/tb02.png) no-repeat;
+            }
+
+            .demo:hover .font{
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="demo">
+            <div class="icon">
+            </div>
+            <div class="font">
+                文本内容
+            </div>
+        </div>
+
+        <div class="demo">
+            <div class="icon">
+            </div>
+            <div class="font">
+                文本内容
+            </div>
+        </div>
+
+        <div class="demo">
+            <div class="icon">
+            </div>
+            <div class="font">
+                文本内容
+            </div>
+        </div>
+
+        <div class="demo">
+            <div class="icon">
+            </div>
+            <div class="font">
+                文本内容
+            </div>
+        </div>
+
+    </body>
+</html>
