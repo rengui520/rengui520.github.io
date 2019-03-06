@@ -32,7 +32,9 @@ header-img: "img/180321.jpg"
 
 ### 创建博客  
 {% highlight python %}
+
 $ jekyll new username.github.io
+
 {% endhighlight %}
 
 ### 进入博客目录  
