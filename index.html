@@ -2,18 +2,6 @@
 ---
 <html>
 
-<ul class="list pa0">
-  {% for post in site.posts %}
-  <li class="mv2">
-    <a href="{{ site.url }}{{ post.url }}" class="db pv1 link blue hover-mid-gray">
-      <time class="fr silver ttu">{{ post.date | date: "%Y-%m-%d" }} </time>
-      {{ post.title }}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
-<!DOCTYPE html>
-
     <head>
         <meta charset="utf-8" />
         <title></title>
@@ -49,37 +37,18 @@
     </head>
     <body>
 
-        <div class="demo">
-            <div class="icon">
-            </div>
-            <div class="font">
-                文本内容
-            </div>
-        </div>
+        <ul class="list pa0">
+			{% for post in site.posts %}
+			<li class="mv2">
+				<a href="{{ site.url }}{{ post.url }}" class="db pv1 link blue hover-mid-gray">
+					<time class="fr silver ttu">{{ post.date | date: "%Y-%m-%d" }} </time>
+					{{ post.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<!--<!DOCTYPE html>-->
 
-        <div class="demo">
-            <div class="icon">
-            </div>
-            <div class="font">
-                文本内容
-            </div>
-        </div>
-
-        <div class="demo">
-            <div class="icon">
-            </div>
-            <div class="font">
-                文本内容
-            </div>
-        </div>
-
-        <div class="demo">
-            <div class="icon">
-            </div>
-            <div class="font">
-                文本内容
-            </div>
-        </div>
 
     </body>
 </html>
