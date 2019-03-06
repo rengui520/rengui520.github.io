@@ -29,6 +29,7 @@ header-img: "img/180321.jpg"
 ### 三、开始搭建     
 #### 安装 jekyll  
 <head><link rel="stylesheet" href="../css/rouge.css"></head>
+在桌面鼠标右键，选择 `Git Bash Here` ，打开分布式版本控制软件。
 ```
 $ gem install jekyll
 ```
@@ -61,21 +62,23 @@ $ git init
 ``` ruby
 $ ssh-keygen -t rsa -C "useremail"
 ```
-
+检测连接情况
 ```ruby
-$ ssh -T git@github.com    #(检测连接情况)
+$ ssh -T git@github.com    
 ```
 
 #### 建立传输通道  
 注意：仓库名的前半部分必须与 GitHub 用户名相同。否则，部署不了博客页面。
-```ruby
-$ git remote add origin https://github.com/username/username.github.io.git   (无远程远点情况) 
-或者 $ git remote add origin ssh://git@github.com/username/username.github.io.git 
-```
 
+无远程远点情况时执行下面指令
 ```ruby
-$ git remote set-url origin git@github.com:username/username.github.io.git   (有远程远点情况)
-或者 $ git remote set-url origin ssh://git@github.com/username/username.github.io.git
+$ git remote add origin https://github.com/username/username.github.io.git    
+or $ git remote add origin ssh://git@github.com/username/username.github.io.git 
+```
+有远程远点情况时执行下面指令
+```ruby
+$ git remote set-url origin git@github.com:username/username.github.io.git   
+or $ git remote set-url origin ssh://git@github.com/username/username.github.io.git
 ```
 
 #### 上传 GitHub 远端  
@@ -91,7 +94,7 @@ $ git add .
 
 ```ruby
 $ git commit -a -m "Add submission Tags"
-或 $ git commit -m "Add submission Tags"
+or $ git commit -m "Add submission Tags"
 ```
 
 ```ruby
@@ -103,11 +106,7 @@ $ git push origin master
 先下载仓库内容      
 ```
 $ git clone https://github.com/username/username.github.io.git
-```
-     
-或者    
-```
-$ git clone git@github.com:username/username.github.io.git
+or $ git clone git@github.com:username/username.github.io.git
 ```
    
 添加文件或者修改文件后，再进行上述步骤 上传 GitHub 远端  的步骤。      
