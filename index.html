@@ -53,24 +53,25 @@
             <div class="font">-->
                 <ul class="list pa0">
 					{% for post in site.posts %}
-					<div class="demo">
-						<div class="icon">
-						</div>
-						<!--<div class="font">-->
+					
+						
 							<li class="mv2">
+								<div class="demo">
+								<div class="icon">
+								</div>
 								<div class="font">
 								<a href="{{ site.url }}{{ post.url }}" class="db pv1 link blue hover-mid-gray">
 									<time class="fr silver ttu">{{ post.date | date: "%Y-%m-%d" }} </time>
 									{{ post.title }}
 								</a>
 								</div>
+								</div>
 							</li>
 							{% endfor %}
-						<!--</div>-->
+						
 					</div>
 				</ul>
-            <!--</div>
-        </div>-->
+          
 
 
     </body>
