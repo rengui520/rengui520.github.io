@@ -1,5 +1,5 @@
 ---              
-title:  代理池维护
+title:  用Flask+Redis维护代理池
 date:   2019-03-01 12:00:00
 tag:    Spider
 ---
