@@ -131,9 +131,9 @@ or $ git clone git@github.com:username/username.github.io.git
 #### 环境    
 注册GitHub账户: <a href="https://github.com/">GitHub</a> 创建仓库：(username.github.io)
 
-### 其它代码托管平台
-
-
+### 
+<p><a href="https://jekyllrb.com/docs/structure/">JeKyll 文档</a></p> 
+<p><img src="/images/layout/QQ截图20190307212408.jpg" ></p>
 
 #### 本文完，欢迎赞赏      
 <div  align="center">      
