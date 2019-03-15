@@ -4,10 +4,8 @@ date:   2019-03-13 12:00:00
 tag:    数据分析
 ---
 
+<head><link rel="stylesheet" href="../css/rouge.css"></head>
 axis=0 是跨行（纵向），axis=1 是跨列（横向）
-
-
-
 
 ## Numpy入门
 ### ndarray 对象
