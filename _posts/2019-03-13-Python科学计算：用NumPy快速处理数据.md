@@ -5,7 +5,10 @@ tag:    数据分析
 ---
 
 <head><link rel="stylesheet" href="../css/rouge.css"></head>
-axis=0 是跨行（纵向），axis=1 是跨列（横向）
+axis=0 是跨行（纵向），axis=1 是跨列（横向）           
+
+在 NumPy 里有两个重要的对象：ndarray（N-dimensional array object）解决了多维数组问题，而 ufunc（universal functionobject）则是解决对数组进行处理的函数。       
+
 
 ## Numpy入门
 ### ndarray 对象
@@ -225,3 +228,140 @@ c = np.load('two_array.npz')  #加载多个文件并赋值
 print(c['a'])
 print(c['b'])
 ```
+
+极客时间：
+
+结构数组：
+```python
+import numpy as np
+persontype = np.dtype({
+    'names':['name', 'age', 'chinese', 'math', 'english'],
+    'formats':['S32','i', 'i', 'i', 'f']})
+peoples = np.array([("ZhangFei",32,75,100, 90),("GuanYu",24,85,96,88.5),
+       ("ZhaoYun",28,85,92,96.5),("HuangZhong",29,65,85,100)],
+    dtype=persontype)
+    #首先在 NumPy 中是用 dtype 定义的结构类型，然后在定义数组的时候，用 array 中指定了结构数组的类型 dtype=persontype，这样你就可以自由地使用自定义的 persontype 了。
+
+ages = peoples[:]['age']
+chineses = peoples[:]['chinese']  #每个人的语文成绩
+maths = peoples[:]['math']
+englishs = peoples[:]['english']
+print np.mean(ages)
+print np.mean(chineses)
+print np.mean(maths)
+print np.mean(englishs)
+```
+
+### ufunc 运算
+
+1.算术运算
+```python
+# x1 和x2的结果是一样的，
+x1 = np.arange(1,11,2)  #指定初始值、终值、步长
+x2 = np.linspace(1,9,5)  #指定初始值、终值、元素个数
+print np.add(x1, x2)     #加
+print np.subtract(x1, x2)   #减
+print np.multiply(x1, x2)   #乘
+print np.divide(x1, x2)     #除
+print np.power(x1, x2)     #求 n 次方
+print np.remainder(x1, x2)   #取余数
+```
+
+2.计数组 / 矩阵中的最大值函数 amax()，最小值函数 amin()
+```python
+import numpy as np
+a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+print np.amin(a)
+print np.amin(a,0)   #0 是跨行（纵向），axis=1 是跨列（横向）
+print np.amin(a,1)
+print np.amax(a)
+print np.amax(a,0)
+print np.amax(a,1)
+```
+
+3.统计最大值与最小值之差 ptp()
+```python
+a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+print np.ptp(a)
+print np.ptp(a,0)
+print np.ptp(a,1)
+```
+
+4.统计数组的百分位数 percentile()
+```python 
+a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+#percentile() 代表着第 p 个百分位数，这里p 的取值范围是 0-100，如果 p=0，那么就是求最小值，如果 p=50 就是求平均值，如果 p=100 就是求最大值。
+print np.percentile(a, 50)  #平均值
+print np.percentile(a, 50, axis=0)   #纵。
+print np.percentile(a, 50, axis=1)   #横
+```
+```
+结果：
+5.0
+[4. 5. 6.]
+[2. 5. 8.]
+```
+
+5.统计数组中的中位数 median()、平均数 mean()
+```python
+a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+# 求中位数
+print np.median(a)
+print np.median(a, axis=0)
+print np.median(a, axis=1)
+# 求平均数
+print np.mean(a)
+print np.mean(a, axis=0)
+print np.mean(a, axis=1)
+```
+
+6.统计数组中的加权平均值 average()
+```python
+a = np.array([1,2,3,4])
+wts = np.array([1,2,3,4])
+# 默认情况下每个元素的权重是相同的，也可以指定权重数组
+print np.average(a)
+print np.average(a,weights=wts)
+
+结果：
+2.5
+3.0
+```
+
+7.统计数组中的标准差 std()、方差 var()
+方差的计算是指`每个数值`与`平均值`之差的`平方`求和的平均值.    
+标准差是方差的算术平方根。    
+```python 
+a = np.array([1,2,3,4])
+print np.std(a)
+print np.var(a)
+
+结果：
+1.118033988749895
+1.25
+```
+
+8.NumPy 排序。 sort() 函数。
+`sort(a, axis=-1, kind=‘quicksort’, order=None)`，默认情况下使用的是快速排序；在 kind 里，可以指定 quicksort、mergesort、heapsort 分别表示快速排序、合并排序、堆排序。同样 axis 默认是 -1，即沿着数组的最后一个轴进行排序，也可以取不同的 axis 轴，或者 axis=None 代表采用扁平化的方式作为一个向量进行排序。另外 order 字段，对于结构化的数组可以指定按照某个字段进行排序。
+```python
+a = np.array([[4,3,2],[2,4,1]])
+print np.sort(a)
+print np.sort(a, axis=None)
+print np.sort(a, axis=0)  
+print np.sort(a, axis=1)  
+```
+```
+结果：
+[[2 3 4]
+ [1 2 4]]
+[1 2 2 3 4 4]
+[[2 3 1]
+ [4 4 2]]
+[[2 3 4]
+ [1 2 4]]
+```
+
+
+
+
+
