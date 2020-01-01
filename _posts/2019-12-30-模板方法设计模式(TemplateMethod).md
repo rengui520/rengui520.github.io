@@ -1,3 +1,4 @@
+---
 title:  模板方法设计模式(TemplateMethod) 
 date:   2019-12-30 12:00:00
 tag:    java
