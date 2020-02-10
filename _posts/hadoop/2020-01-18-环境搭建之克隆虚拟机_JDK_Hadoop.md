@@ -4,12 +4,7 @@ date:   2020-01-18 12:00:00
 tag:    Hadoop
 ---
 
-### 环境搭建之克隆虚拟机_JDK_Hadoop
-
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
-
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
+## 环境搭建之克隆虚拟机_JDK_Hadoop
 
 利用 service + 服务名称 + start/stop/restart 对服务进行 启动，停止和重启
 首先重连网络，运行

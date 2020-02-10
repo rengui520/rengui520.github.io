@@ -5,10 +5,6 @@ tag:    java
 ---
 ### 异常处理方式一：try_catch_finally
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
-
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
 
 Java异常处理
 Java采用异常处理机制，将异常处理的程序代码集中在一起，与正常的程序代码分开，使得程序简洁，并易于维护。

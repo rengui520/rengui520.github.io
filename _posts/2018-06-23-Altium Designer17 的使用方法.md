@@ -5,10 +5,7 @@ tag:    工具
 ---
 # Altium-Designer17-的使用方法
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
 制作的过程
 
 ㈠ 启动 Altium Designer17 ，建立 PCB 工程，打开 `File > New > PCB Project`

@@ -5,10 +5,7 @@ tag:    PhotoShop
 ---
 # PhotoShop的使用
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
 
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
 #### 前言
 在不破坏原始图片素材的基础上进行修改
 

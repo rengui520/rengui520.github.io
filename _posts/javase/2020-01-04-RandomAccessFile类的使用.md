@@ -6,10 +6,6 @@ tag:    java
 
 ### RandomAccessFile 类的使用
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
-
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
 
 
 - RandomAccessFile 类支持 “随机访问” 的方式，程序可以直接跳到文件的任意地方来读、写文件

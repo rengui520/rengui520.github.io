@@ -4,7 +4,6 @@ date:   2019-03-13 12:00:00
 tag:    数据分析
 ---
 
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
 axis=0 是跨行（纵向），axis=1 是跨列（横向）           
 
 在 NumPy 里有两个重要的对象：ndarray（N-dimensional array object）解决了多维数组问题，而 ufunc（universal functionobject）则是解决对数组进行处理的函数。       

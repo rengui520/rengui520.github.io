@@ -6,11 +6,6 @@ tag:    java
 
 ### 日期类之System_Date_SimpleDateFormat_Calendar类
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
-
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
-
 
 日期类    
 1.java.lang.System类    

@@ -6,11 +6,6 @@ tag:    java
 
 ### 创建Java类并实例化对象_详解Java类的属性与局部变量_详解Java类的方法的使用
 
-***
-> 版权声明：本文为 {{ site.name }} 原创文章，可以随意转载，但必须在明确位置注明出处！
-
-<head><link rel="stylesheet" href="../css/rouge.css"></head>
-
 创建Java类并实例化对象
 详解Java类的属性与局部变量
 详解Java类的方法的使用
