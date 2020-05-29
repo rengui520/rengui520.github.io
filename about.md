@@ -14,7 +14,7 @@ title: About me
 
 ## 联系我
 
-- 个人主页：[旭霁](https://moistlin.cn)
+- 个人主页：[旭霁](https://rengui520.github.io)
 
 - GitHub：[rengui520](https://github.com/rengui520)
 
